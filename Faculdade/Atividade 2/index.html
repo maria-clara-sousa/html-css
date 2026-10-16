@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteudo">
+        <h1>CADASTRO DE CLIENTE</h1>
+
+        <form method="post" >
+            <div class="grupo-formulario">
+                <label>Nome:</label>
+                <input type="text" name="nome" placeholder="Digite seu nome completo">
+            </div>
+            <div class="grupo-formulario">
+                <label>E-mail:</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="grupo-formulario">
+                <label>Senha:</label>
+                <input type="password" name="senha" placeholder="Digite sua senha">
+            </div>
+
+            <div class="grupo-formulario">
+                <label>Tipo de pessoa:</label>
+                <input type="radio" name="tipo_pessoa" value="fisica" checked>Pessoa física
+                <input type="radio" name="tipo_pessoa" value="juridica">Pessoa jurídica
+            </div>
+
+            <div class="grupo-formulario">
+                <label>Interesses:</label>
+                <input type="checkbox" name="interesses" value="tecnologia" checked>Tecnologia
+                <input type="checkbox" name="interesses" value="marketing">Marketing
+                <input type="checkbox" name="interesses" value="design">Design
+            </div>
+
+            <div class="grupo-formulario">
+                <label>Estado:</label>
+                <select name="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS" selected>Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <div class="grupo-formulario">
+                <label>Observações:</label>
+                <textarea name="observacoes" cols="40" rows="4"></textarea>
+            </div>
+            <br>
+            <div class="botao">
+                <button type="submit" value="Cadastrar">Cadastrar</button>
+            </div>
+    </div>
+
+    </form>
+</body>
+</html>

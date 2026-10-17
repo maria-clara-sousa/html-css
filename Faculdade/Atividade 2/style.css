@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 15px;
+}
+
 .conteudo {
     background-color: white;
     border: 2px solid rgb(212, 209, 209);
@@ -9,31 +16,60 @@
     margin: 20px auto;
     width: 100%;
     box-sizing: border-box;
-
 }
 
 .conteudo h1 {
-    background-color: rgb(49, 49, 85);
+    background-color: rgb(198, 114, 201);
     color: white;
     text-align: center;
+    padding: 10px;
+    border-radius: 5px;
 }
 
+.grupo-formulario {
+    margin-bottom: 15px;
+}
 
+.grupo-formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.grupo-formulario input[type="text"],
+.grupo-formulario input[type="email"],
+.grupo-formulario input[type="password"],
+.grupo-formulario select,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(212, 209, 209);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
 
 .botao {
-    background-color: rgb(49, 49, 85);
+    background-color: rgb(211, 112, 186);
     color: white;
     border: none;
-    padding: 15px 25px;
+    padding: 10px 25px;
     border-radius: 7px;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 @media (max-width: 480px) {
     .conteudo {
         padding: 15px;
+        margin: 10px auto;
+    }
+
+    .conteudo h1 {
+        font-size: 20px;
     }
 }
